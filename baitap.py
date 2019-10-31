@@ -1,24 +1,24 @@
-#Exercise 1
-inventory= {'gold' : 500,'pouch' : ['flint', 'twine', 'gemstone'],
-'backpack' : ['xylophone', 'dagger', 'bedroll', 'bread loaf']}
-inventory['pocket']= 'seashell','strange berry','lint'
-del inventory['backpack'][1]
-print(inventory)
+# Exercise 1
+# inventory= {'gold' : 500,'pouch' : ['flint', 'twine', 'gemstone'],
+# 'backpack' : ['xylophone', 'dagger', 'bedroll', 'bread loaf']}
+# inventory['pocket']= 'seashell','strange berry','lint'
+# del inventory['backpack'][1]
+# print(inventory)
 
-#Exercise 2
-price={'banana':4,'apple':2,'orange':1.5,'pear':3}
-stock={'banana':6,'apple':0,'orange':32,'pear':15} 
-x=['banana','apple','orange','pear']
-for i in range(len(x)):
-    print('-',x[i])
-    print('  price',price[x[i]])
-    print('  stock',stock[x[i]])
-tong=0
-for i in range(len(x)):
-    a=price[x[i]]*stock[x[i]]
-    tong=tong+a
-    print(x[i],': ',a)
-print(tong)
+# #Exercise 2
+# price={'banana':4,'apple':2,'orange':1.5,'pear':3}
+# stock={'banana':6,'apple':0,'orange':32,'pear':15} 
+# x=['banana','apple','orange','pear']
+# for i in range(len(x)):
+#     print('-',x[i])
+#     print('  price',price[x[i]])
+#     print('  stock',stock[x[i]])
+# tong=0
+# for i in range(len(x)):
+#     a=price[x[i]]*stock[x[i]]
+#     tong=tong+a
+#     print(x[i],': ',a)
+# print(tong)
 
 
 #Exercise 3
@@ -97,7 +97,7 @@ for i in range(len(a)):
     if d>0:
         print(a[i],'[',d,']',end='')
 
-
+#
 s='abccccabdeeeeef'
 i=0
 j=i+1
@@ -113,12 +113,13 @@ while i<len(s):
     i=i+a
     if a>0:
         print(s[i],'[',a,']',end='')
-    
 
 
 
-
-
-
-
-        
+from turtle import *
+for ​i ​in ​range​(​100​):
+​   import ​random
+    x = random.randint(-​300​, ​300​)
+    y = random.randint(-​300​, ​300​)
+    length = random.randint(​3​, ​10​)
+    draw_star(x​, ​y​, ​length)
